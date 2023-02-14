@@ -1,7 +1,19 @@
 
 const loadQuote = () => {
-    console.log("first")
+   
+    fetch( 'https://api.kanye.rest')
+    .then(res => res.json())
+    .then(data => displayQuote(data))
 }
 
 
-loadQuote();
+const displayQuote = quote => {
+
+
+      const blockQUOTE = document.getElementById('quote');
+
+      blockQUOTE.innerText = quote.quote;
+
+
+
+}
