@@ -21,12 +21,15 @@ const randomUser = () => {
         const userDiv = document.createElement('div');
 
         userDiv.classList.add('user');
-        
+
         userDiv.innerHTML = `
         
         <h3> User Name :   </h3>
 
-        <p> User Info :    </p>
+        <p> User Email:  ${user.email}  </p>
+
+        <p> User Location :  ${user.location.city}   ${user.location.country}  </p>
+
 
         
         `;
