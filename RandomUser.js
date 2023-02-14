@@ -15,7 +15,7 @@ const randomUser = () => {
 
      const userContainer = document.getElementById('user-containers');
 
-
+  console.log(userContainer)
      for (const user of users ){
 
         const userDiv = document.createElement('div');
